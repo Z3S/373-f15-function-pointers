@@ -10,6 +10,7 @@ int compare(int a, int b) {
 	    return a - b;
 }
 
+__attribute__ ((weak))
 int cmpr (const void * a, const void * b){
 	return ( *(int*)a - *(int*)b );
 }
